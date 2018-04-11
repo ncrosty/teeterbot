@@ -32,5 +32,7 @@
     <arg name="torque_mode" value="true" />
     <arg name="speed_mode" value="false" />
   </include>
+  
+     <node pkg="nc_pendulum_controller" type="nc_pendulum_controller_node" name="nc_pendulum_controller_node" output="screen" />
 
 </launch>
