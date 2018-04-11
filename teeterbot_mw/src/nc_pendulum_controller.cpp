@@ -3,12 +3,12 @@
 //
 // Code generated for Simulink model 'nc_pendulum_controller'.
 //
-// Model version                  : 1.22
+// Model version                  : 1.23
 // Simulink Coder version         : 8.14 (R2018a) 06-Feb-2018
-// C/C++ source code generated on : Wed Apr 11 15:01:57 2018
+// C/C++ source code generated on : Wed Apr 11 15:10:05 2018
 //
 // Target selection: ert.tlc
-// Embedded hardware selection: Generic->Unspecified (assume 32-bit Generic)
+// Embedded hardware selection: Intel->x86-64 (Linux 64)
 // Code generation objectives: Unspecified
 // Validation result: Not run
 //
@@ -19,26 +19,22 @@
 void nc_pendulum_controller_cModelClass::SystemProp_matlabCodegenSetAnyP
   (robotics_slros_internal_block_T *obj, boolean_T value)
 {
-  // Start for MATLABSystem: '<S7>/SourceBlock'
   obj->matlabCodegenIsDeleted = value;
 }
 
 void nc_pendulum_controller_cModelClass::matlabCodegenHandle_matlabCodeg
   (robotics_slros_internal_block_T *obj)
 {
-  // Start for MATLABSystem: '<S7>/SourceBlock'
   if (!obj->matlabCodegenIsDeleted) {
     SystemProp_matlabCodegenSetAnyP(obj, true);
   }
-
-  // End of Start for MATLABSystem: '<S7>/SourceBlock'
 }
 
 // Model step function
 void nc_pendulum_controller_cModelClass::step()
 {
   // Outputs for Atomic SubSystem: '<Root>/Subscribe'
-  // Start for MATLABSystem: '<S7>/SourceBlock'
+  // MATLABSystem: '<S7>/SourceBlock'
   Sub_nc_pendulum_controller_12.getLatestMessage
     (&nc_pendulum_controller_B.b_varargout_2);
 
