@@ -44,5 +44,7 @@ target_link_libraries(${PROJECT_NAME}_plugin
 )
 
 
-add_executable(teeterbot_controller src/teeterbot_controller.cpp)
-target_link_libraries(teeterbot_controller ${catkin_LIBRARIES})
+add_executable(teeterbot_main src/teeterbot_main.cpp
+  src/nc_pendulum_controller.cpp
+)
+target_link_libraries(teeterbot_main ${catkin_LIBRARIES})
